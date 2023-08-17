@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    int a,b;
+    cout<<"Enter First number: ";
+    cin>>a;
+
+    cout<<"Enter Operation: ";
+    char ch;
+    cin>>ch;
+
+    if(ch=='+'){
+        cout<<"Enter Second number: ";
+        cin>>b;
+        cout<<a + b<<endl;
+    }
+
+    else if(ch=='-'){
+        cout<<"Enter Second number: ";
+        cin>>b;
+        cout<<a - b<<endl;
+    }
+
+    else if(ch=='*'){
+        cout<<"Enter Second number: ";
+        cin>>b;
+        cout<<a * b<<endl;
+    }
+
+    else if(ch=='/'){
+        cout<<"Enter Second number: ";
+        cin>>b;
+
+        if(b!=0){
+            cout<<a / b<<endl;
+        }
+        else{
+            cout<<"Undefined "<<endl;
+        }
+    }
+
+    else{
+        cout<<"Enter Correct Operation "<<endl;
+    }
+
+    return 0;
+}
