@@ -1,0 +1,36 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+
+    srand(time(0));
+    int random_number = rand()%10;
+
+    cout<<"NUMBER GUESSING GAME "<<endl;
+
+    int Guess;
+    cout<<"Enter a guess: ";
+    cin>>Guess;
+
+    while(Guess!=random_number){
+
+        if(Guess>random_number){
+            cout<<"OOPS SORRY!! TRY A SMALLER NUMBER "<<endl;
+            cout<<"Enter a guess: ";
+            cin>>Guess;
+            continue;
+        }
+        else{
+            cout<<"OOPS SORRY!! TRY A GREATER NUMBER "<<endl;
+            cout<<"Enter a guess: ";
+            cin>>Guess;
+            continue;
+        }
+    }
+
+    cout<<"Correct Number: ";
+    cout<<Guess;
+
+    return 0;
+}
